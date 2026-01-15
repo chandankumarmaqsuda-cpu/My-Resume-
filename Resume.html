@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chandan Kumar - Resume</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    font-family:'Segoe UI',Tahoma;
+    background:#f2f3f7;
+    color:#333;
+}
+
+/* ===== LAYOUT ===== */
+.container{
+    max-width:1100px;
+    margin:30px auto;
+    padding:20px;
+}
+header,.section{
+    background:#fff;
+    border-radius:18px;
+    padding:2rem;
+    margin-bottom:2rem;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+}
+header{text-align:center}
+
+/* ===== PROFILE PHOTO ===== */
+.profile-img{
+    width:150px;
+    height:150px;
+    margin:0 auto 1rem;
+    border-radius:50%;
+    overflow:hidden;
+}
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===== TEXT ===== */
+h1{font-size:2.3rem}
+.subtitle{color:#666;margin-bottom:1rem}
+
+.contact-header{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:1rem;
+    font-size:.95rem;
+    margin-bottom:1.5rem;
+}
+
+/* ===== NEON BUTTONS ===== */
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.neon-btn{
+    position:relative;
+}
+
+.neon-btn svg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+
+.neon-btn rect{
+    fill:none;
+    stroke:url(#rgb);
+    stroke-width:3;
+    rx:28;
+    ry:28;
+    animation:spin 4s linear infinite;
+}
+
+.neon-btn a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:12px 20px;
+    border-radius:28px;
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    position:relative;
+    z-index:1;
+}
+
+.fb{background:#1877f2}
+.insta{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}
+.wa{background:#25d366}
+.li{background:#0a66c2}
+
+@keyframes spin{
+    from{stroke-dashoffset:0}
+    to{stroke-dashoffset:-400}
+}
+
+/* ===== SECTIONS ===== */
+h2{
+    border-bottom:2px solid #ddd;
+    margin-bottom:1rem;
+    padding-bottom:.4rem;
+}
+ul{margin-left:1.5rem}
+li{margin-bottom:.6rem}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1rem;
+}
+.skill-box{
+    background:#f4f5fa;
+    padding:1.2rem;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    color:#555;
+    padding:1.5rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+    <!-- PROFILE PHOTO -->
+    <div class="profile-img">
+        <img src="IMG_20260116_030956.jpg" alt="Chandan Kumar">
+    </div>
+
+    <h1>Chandan Kumar</h1>
+    <p class="subtitle">Computer Operator | Entry-Level Web & UI Learner</p>
+
+    <div class="contact-header">
+        <span>📞 +91 72739 22192</span>
+        <span>✉️ chandankumarmaqsuda@gmail.com</span>
+        <span>📍 Madhubani, Bihar</span>
+    </div>
+
+    <!-- SVG GRADIENT -->
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="rgb" gradientUnits="userSpaceOnUse"
+                x1="0" y1="0" x2="400" y2="0">
+                <stop offset="0%" stop-color="red"/>
+                <stop offset="25%" stop-color="orange"/>
+                <stop offset="50%" stop-color="yellow"/>
+                <stop offset="75%" stop-color="cyan"/>
+                <stop offset="100%" stop-color="magenta"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- SOCIAL BUTTONS -->
+    <div class="social-links">
+
+        <div class="neon-btn">
+            <svg viewBox="0 0 200 60">
+                <rect x="3" y="3" width="194" height="54"/>
+            </svg>
+            <a class="fb"
+               href="https://www.facebook.com/share/1CeKa1Ksn9/"
+               target="_blank">
+               <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
+
+        <div class="neon-btn">
+            <svg viewBox="0 0 200 60">
+                <rect x="3" y="3" width="194" height="54"/>
+            </svg>
+            <a class="insta"
+               href="https://www.instagram.com/chandan123_official?igsh=bjd5amo4aTE3emc="
+               target="_blank">
+               <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="neon-btn">
+            <svg viewBox="0 0 200 60">
+                <rect x="3" y="3" width="194" height="54"/>
+            </svg>
+            <a class="wa"
+               href="https://wa.me/917273922192"
+               target="_blank">
+               <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+
+        <div class="neon-btn">
+            <svg viewBox="0 0 200 60">
+                <rect x="3" y="3" width="194" height="54"/>
+            </svg>
+            <a class="li"
+               href="https://www.linkedin.com/in/chandan-kumar-6b7801182?trk=contact-info"
+               target="_blank">
+               <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+        </div>
+
+    </div>
+
+</header>
+
+<section class="section">
+<h2>Career Objective</h2>
+<p>
+Motivated and responsible candidate seeking an entry-level opportunity where I can apply my computer knowledge, basic web skills, and operational experience while continuously learning and growing.
+</p>
+</section>
+
+<section class="section">
+<h2>Professional & Coding Experience</h2>
+<ul>
+<li>HTML5 & CSS3 responsive web pages</li>
+<li>Resume and portfolio website design</li>
+<li>Basic JavaScript for simple interactions</li>
+<li>GitHub Pages hosting (basic)</li>
+</ul>
+</section>
+
+<section class="section">
+<h2>Work Experience</h2>
+<ul>
+<li>Hotel Rajeshahi family restrorung & Bar Cashier – 2 Year</li>
+<li>Haldiram’s Outlet Cashier – 10 Months</li>
+<li>Hotel Captain (Maharashtra) – 1 Year</li>
+<li>Laser Machine Operator – Samsung Factory, Noida – 6 Months</li>
+</ul>
+</section>
+
+<section class="section">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-box">
+<ul>
+<li>MS Word, Excel, PowerPoint</li>
+<li>HTML & CSS (Basic)</li>
+<li>Computer Operations</li>
+</ul>
+</div>
+<div class="skill-box">
+<ul>
+<li>Hindi, Maithili, Bhojpuri</li>
+<li>Marathi</li>
+<li>Basic English</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Personal Profile</h2>
+<ul>
+<li>Father’s Name: Bishambar Paswan</li>
+<li>Date of Birth: 14-04-2002</li>
+<li>Marital Status: Unmarried</li>
+</ul>
+</section>
+
+<footer>
+<p>© 2024 Chandan Kumar</p>
+</footer>
+
+</div>
+</body>
+</html>
